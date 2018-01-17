@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Глушакова](https://up.htmlacademy.ru/adaptive/13/user/110507).
-* Наставник: `Неизвестно`.
+* Наставник: Макс Пушкарев.
 
 ---
 
