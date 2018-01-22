@@ -34,12 +34,20 @@
 
         <p class="program__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <fieldset class="program__cat-info">
-          <label class="program__label" for="name">Имя:<sup>*</sup></label>
-          <input class="program__input" id="name" type="text" name="name" value="" placeholder="Барсик" required>
-          <label class="program__label" for="weight">Вес (кг):<sup>*</sup></label>
-          <input class="program__input" id="weight" type="text" name="weight" value="" placeholder="7" required>
-          <label class="program__label" for="age">Возраст (лет):</label>
-          <input class="program__input" id="age" type="text" name="age" value="" placeholder="7">
+          <ul>
+            <li>
+              <label class="program__label" for="name">Имя:<sup>*</sup></label>
+              <input class="program__input" id="name" type="text" name="name" value="" placeholder="Барсик" required>
+            </li>
+            <li>
+              <label class="program__label" for="weight">Вес (кг):<sup>*</sup></label>
+              <input class="program__input" id="weight" type="text" name="weight" value="" placeholder="7" required>
+            </li>
+            <li>
+              <label class="program__label" for="age">Возраст (лет):</label>
+              <input class="program__input" id="age" type="text" name="age" value="" placeholder="7">
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="program__goal">
           <ul>
@@ -59,10 +67,16 @@
         </fieldset>
         <fieldset class="program__contacts">
           <legend class="program__legend">Контактные данные (владельца кота)</legend>
-          <label class="program__label" for="email">E-mail:<sup>*</sup></label>
-          <input class="program__input" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com" required>
-          <label class="program__label" for="phone">Телефон:<sup>*</sup></label>
-          <input class="program__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90" required>
+          <ul>
+            <li>
+              <label class="program__label" for="email">E-mail:<sup>*</sup></label>
+              <input class="program__input" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li>
+              <label class="program__label" for="phone">Телефон:<sup>*</sup></label>
+              <input class="program__input" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="program__comment">
           <legend class="program__legend">Комментарий</legend>
