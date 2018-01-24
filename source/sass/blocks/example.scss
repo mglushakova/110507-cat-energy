@@ -1,0 +1,65 @@
+.example {
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  color: $colorTextLight;
+
+  background-color: $colorBackground;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: $fontHeader;
+  font-size: 36px;
+  line-height: 60px;
+  color: $colorTextDark;
+}
+
+.example__description {
+  font-family: $fontText;
+  font-size: 14px;
+  line-height: 18px;
+  color: $colorTextLight;
+}
+
+.example__features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.example__value {
+  font-family: $fontHeader;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $colorTextDark;
+}
+
+.example__field {
+  font-family: $fontText;
+  font-size: 12px;
+  line-height: 12px;
+  color: $colorTextLight;
+}
+
+.example__cost {
+  display: block;
+
+  font-family: $fontHeader;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $colorTextDark;
+}
+
+.example__button {
+  font-family: $fontHeader;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $colorTextDark;
+}

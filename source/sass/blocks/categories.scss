@@ -1,0 +1,52 @@
+.categories {
+  color: $colorTextLight;
+
+  background-color: #ffffff;
+}
+
+.categories__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.categories__item {
+  margin-bottom: 20px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $colorBackground;
+}
+
+.categories__title {
+  margin: 0;
+
+  font-family: $fontHeader;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $colorTextDark;
+}
+
+.categories__description {
+  margin-bottom: 40px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.categories__link {
+  font-family: $fontHeader;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $colorTextDark;
+}
+
+.categories__link:active {
+  opacity: 0.3;
+}

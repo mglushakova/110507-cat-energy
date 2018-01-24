@@ -1,0 +1,17 @@
+.page-header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  color: $colorTextLight;
+
+  background-color: #ffffff;
+}
+
+.page-header__logo[href]:hover,
+.page-header__logo[href]:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo[href]:active {
+  opacity: 0.6;
+}

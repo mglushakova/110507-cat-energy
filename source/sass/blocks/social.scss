@@ -1,0 +1,50 @@
+.social {
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__link:hover,
+.social__link:focus {
+
+  .social__image {
+    fill: $colorAccent;
+  }
+
+}
+
+.social__link:active {
+
+  .social__image {
+    opacity: 0.3;
+  }
+
+}
+
+.social__image {
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--ig {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+}
+
