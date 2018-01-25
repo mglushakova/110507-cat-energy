@@ -1,0 +1,29 @@
+.copyright__text {
+  font-family: $fontText;
+  font-size: 16px;
+  line-height: 16px;
+  color: $colorTextLight;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+
+  .copyright__image {
+    fill: $colorAccent;
+  }
+
+}
+
+.copyright__link:active {
+
+  .copyright__text,
+  .copyright__image {
+    opacity: 0.3;
+  }
+
+}
+
+.copyright__image {
+  width: 27px;
+  height: 34px;
+}

@@ -1,0 +1,25 @@
+.advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: $fontHeader;
+  font-size: 36px;
+  line-height: 60px;
+  color: $colorTextDark;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 20px;
+
+  font-family: $fontText;
+  font-size: 14px;
+  line-height: 18px;
+  color: $colorTextLight;
+}

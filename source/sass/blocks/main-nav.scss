@@ -1,0 +1,16 @@
+.main-nav {
+  color: $colorTextLight;
+
+  background-color: #ffffff;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 18px;
+
+  cursor: pointer;
+  background-image: url("../../img/icon-mobile-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: none;
+}
