@@ -25,3 +25,10 @@
 .page-footer__social {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tabletWidth) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

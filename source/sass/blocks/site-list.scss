@@ -38,3 +38,16 @@
 .site-list__link[href]:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tabletWidth) {
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .site-list__item,
+  .site-list__item:last-child {
+    border: none;
+  }
+}
+

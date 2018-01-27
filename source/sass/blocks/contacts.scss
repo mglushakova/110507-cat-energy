@@ -31,3 +31,13 @@
 .contacts__map {
   margin: 0;
 }
+
+@media (min-width: $desktopWidth) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+  }
+}

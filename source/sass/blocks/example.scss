@@ -63,3 +63,10 @@
   text-transform: uppercase;
   color: $colorTextDark;
 }
+
+@media (min-width: $desktopWidth) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+  }
+}
