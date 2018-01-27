@@ -48,3 +48,37 @@
 .additional-catalog__order {
   margin-top: 12px;
 }
+
+.additional-catalog__gift {
+  margin-bottom: 35px;
+  width: 280px;
+}
+
+@media (min-width: $tabletWidth) {
+  .additional-catalog {
+    margin-bottom: 75px;
+  }
+
+  .additional-catalog__list {
+    margin-bottom: 70px;
+  }
+
+  .additional-catalog__gift {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .additional-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-catalog__list {
+    width: 895px;
+  }
+
+  .additional-catalog__gift {
+    width: 245px;
+  }
+}
