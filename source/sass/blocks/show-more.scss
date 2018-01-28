@@ -25,3 +25,19 @@
   line-height: 16px;
   color: $colorTextLight;
 }
+
+.show-more__button {
+  width: 280px;
+}
+
+@media (min-width: $tabletWidth) {
+  .show-more__button {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .show-more__button {
+    width: 170px;
+  }
+}
