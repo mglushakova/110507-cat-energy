@@ -1,10 +1,16 @@
 .main-nav {
+  position: relative;
+
   color: $colorTextLight;
 
   background-color: #ffffff;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+
   width: 24px;
   height: 18px;
 
