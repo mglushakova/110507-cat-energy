@@ -23,3 +23,21 @@
   line-height: 18px;
   color: $colorTextLight;
 }
+
+@media (min-width: $tabletWidth) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .advantages__item {
+    width: 245px;
+  }
+}

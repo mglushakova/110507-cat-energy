@@ -7,27 +7,24 @@
 }
 
 .social__list {
+  display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
 
-.social__link:hover,
-.social__link:focus {
-
-  .social__image {
-    fill: $colorAccent;
+  &:hover,
+  &:focus {
+    .social__image {
+      fill: $colorAccent;
+    }
   }
 
-}
-
-.social__link:active {
-
-  .social__image {
-    opacity: 0.3;
+  &:active {
+    .social__image {
+      opacity: 0.3;
+    }
   }
-
 }
 
 .social__image {
@@ -48,3 +45,8 @@
   }
 }
 
+@media (min-width: $tabletWidth) {
+  .social {
+    border: none;
+  }
+}
