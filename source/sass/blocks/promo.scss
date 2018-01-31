@@ -43,7 +43,9 @@
   .promo {
     position: relative;
 
-    min-height: 860px;
+    padding-top: 30px;
+    padding-left: 90px;
+    min-height: 820px;
 
     text-align: left;
     color: $colorTextDark;
@@ -51,18 +53,51 @@
     background-image: none;
   }
 
+  .promo__title {
+    margin-bottom: 42px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 45px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .promo__image {
     position: absolute;
     z-index: -1;
+    top: 230px;
+    left: 200px;
   }
 
   .promo__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 245px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .promo {
-    min-height: 570px;
+    margin-bottom: 100px;
+    padding-top: 105px;
+    padding-left: 80px;
+    min-height: 555px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 50px;
+  }
+
+  .promo__image {
+    top: 20px;
+    left: calc(50% - 160px);
   }
 }
