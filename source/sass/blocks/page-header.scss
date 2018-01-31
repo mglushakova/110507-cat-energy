@@ -1,7 +1,5 @@
 .page-header {
   color: $colorTextLight;
-
-  background-color: #ffffff;
 }
 
 .page-header__logo {
@@ -9,8 +7,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 280px;
 
   &::after {
@@ -34,26 +32,39 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 708px;
   }
 
   .page-header__logo {
     justify-content: flex-start;
     margin: 0;
+    padding: 0;
     width: 192px;
 
     &::after {
       display: none;
     }
   }
+
+  .page-header__logo-image {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: $desktopWidth) {
   .page-header__wrapper {
+    padding-top: 50px;
+    padding-bottom: 0;
     width: 1220px;
   }
 
   .page-header__logo {
     width: 245px;
+  }
+
+  .page-header__logo-image {
+    margin-right: 10px;
   }
 }
