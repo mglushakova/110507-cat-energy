@@ -61,6 +61,14 @@
 
     background-image: url("../../img/icon-cat-pro.svg");
   }
+
+  &:nth-child(2) br {
+    display: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .categories__title {
@@ -155,6 +163,10 @@
       width: 268px;
       height: 112px;
     }
+
+    &:nth-child(2) br {
+      display: inline;
+    }
   }
 
   .categories__title {
@@ -193,6 +205,7 @@
   }
 
   .categories__item {
+    margin-bottom: 0;
     padding-top: 80px;
     padding-bottom: 60px;
     padding-left: 50px;
