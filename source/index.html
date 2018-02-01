@@ -69,30 +69,36 @@
       </section>
 
       <section class="example">
-        <div class="example__info">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__wrapper">
-            <ul class="example__features-list">
-              <li class="example__features-item">
-                <b class="example__value">5 кг</b>
-                <span class="example__field">снижение веса</span>
-              </li>
-              <li class="example__features-item">
-                <b class="example__value">60 дней</b>
-                <span class="example__field">затрачено времени</span>
-              </li>
-            </ul>
-            <b class="example__cost">Затраты на питание: 15000 руб.</b>
+        <div class="container example__container">
+          <div class="example__info">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__wrapper">
+              <ul class="example__features-list">
+                <li class="example__features-item">
+                  <b class="example__value">5 кг</b>
+                  <span class="example__field">снижение <br>веса</span>
+                </li>
+                <li class="example__features-item">
+                  <b class="example__value">60 дней</b>
+                  <span class="example__field">затрачено <br>времени</span>
+                </li>
+              </ul>
+              <b class="example__cost">Затраты на питание: <span class="example__price">15000 руб.</span></b>
+            </div>
           </div>
-        </div>
-        <div class="example__slider">
-          <div class="example__slide">
-            <img class="example__image example__image--fat" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с лишним весом">
-            <img class="example__image example__image--slim" src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот">
-            <label class="example__button" for="progress">Было</label>
-            <input id="progress" class="example__progress" type="radio">
-            <label class="example__button" for="progress">Стало</label>
+          <div class="example__slider">
+            <div class="example__slide">
+              <img class="example__image example__image--fat example__image--active" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с лишним весом">
+              <img class="example__image example__image--slim" src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот">
+              <div class="example__control">
+                <button class="example__button example__button--fat example__button--active"  type="button">Было</button>
+                <div class="example__range">
+                  <button class="example__pointer" type="button"></button>
+                </div>
+                <button class="example__button example__button--slim" type="button">Стало</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
