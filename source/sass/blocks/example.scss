@@ -10,9 +10,8 @@
 }
 
 .example__title {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 22px;
-  width: 280px;
 
   font-family: $fontHeader;
   font-size: 36px;
@@ -209,14 +208,9 @@
 
   .example__title {
     margin-bottom: 60px;
-    width: 708px;
 
     font-size: 60px;
     line-height: 60px;
-  }
-
-  .example__info {
-    width: 708px;
   }
 
   .example__description {
@@ -226,13 +220,18 @@
     line-height: 24px;
   }
 
+  .example__info {
+    width: 708px;
+  }
+
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 65px;
   }
 
   .example__features-list {
+    margin-bottom: 0;
     width: 365px;
   }
 
@@ -283,11 +282,6 @@
     min-height: 650px;
 
     background-image: linear-gradient(180deg, transparent, transparent 190px, $colorBackground 190px, $colorBackground);
-  }
-
-  .example__slide {
-    margin: 0 auto;
-    width: 708px;
   }
 
   .example__image {
@@ -410,7 +404,7 @@
   .example__description {
     margin-bottom: 70px;
   }
-  
+
   .example__field {
     background-color: #f2f2f2;
   }

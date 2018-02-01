@@ -33,3 +33,4 @@ exampleButtonAfter.addEventListener("click", function() {
   exampleButtonAfter.classList.add("example__button--active");
   exampleButtonBefore.classList.remove("example__button--active");
 });
+

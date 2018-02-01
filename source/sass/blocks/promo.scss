@@ -1,6 +1,4 @@
 .promo {
-  padding-top: 25px;
-  width: 100%;
   min-height: 300px;
 
   text-align: center;
@@ -9,6 +7,10 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
+}
+
+.promo__container {
+  padding-top: 25px;
 }
 
 .promo__title {
@@ -41,16 +43,18 @@
 
 @media (min-width: $tabletWidth) {
   .promo {
-    position: relative;
-
-    padding-top: 30px;
-    padding-left: 90px;
-    min-height: 820px;
-
     text-align: left;
     color: $colorTextDark;
 
     background-image: none;
+  }
+
+  .promo__container {
+    position: relative;
+
+    padding-top: 30px;
+    padding-left: 120px;
+    min-height: 820px;
   }
 
   .promo__title {
@@ -85,10 +89,10 @@
 }
 
 @media (min-width: $desktopWidth) {
-  .promo {
+  .promo__container {
     margin-bottom: 100px;
     padding-top: 105px;
-    padding-left: 80px;
+    padding-left: 190px;
     min-height: 555px;
   }
 
