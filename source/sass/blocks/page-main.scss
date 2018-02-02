@@ -11,7 +11,7 @@
 }
 
 .page-main__additional-catalog {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .page-main__program {
@@ -22,6 +22,10 @@
   .page-main__categories {
     margin-bottom: 45px;
   }
+
+  .page-main__additional-catalog {
+    margin-bottom: 75px;
+  }
 }
 
 @media (min-width: $desktopWidth) {
@@ -31,5 +35,9 @@
 
   .page-main__advantages {
     margin-bottom: 90px;
+  }
+
+  .page-main__additional-catalog {
+    margin-bottom: 85px;
   }
 }
