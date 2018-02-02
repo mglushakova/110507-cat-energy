@@ -1,8 +1,27 @@
 .show-more {
+  position: relative;
+
   padding-top: 80px;
   padding-bottom: 25px;
 
   text-align: center;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 28px;
+    left: 145px;
+
+    width: 30px;
+    height: 30px;
+
+    opacity: 0.2;
+
+    background-image: url("../../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .show-more__title {
@@ -18,7 +37,7 @@
 
 .show-more__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-family: $fontText;
   font-size: 12px;
@@ -31,12 +50,52 @@
 }
 
 @media (min-width: $tabletWidth) {
+  .show-more {
+    padding-top: 165px;
+
+    &::after {
+      top: 55px;
+      left: 132px;
+
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .show-more__title {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    width: 142px;
+
+    font-size: 20px;
+  }
+
+  .show-more__text {
+    margin: 0 auto;
+    margin-bottom: 85px;
+    width: 175px;
+
+    font-size: 16px;
+  }
+
   .show-more__button {
     width: 250px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktopWidth) {
+  .show-more {
+    padding-top: 162px;
+    
+    &::after {
+      top: 52px;
+      left: 92px;
+    }
+  }
+
   .show-more__button {
     width: 170px;
   }

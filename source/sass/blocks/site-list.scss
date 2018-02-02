@@ -82,18 +82,27 @@
 @media (min-width: $desktopWidth) {
   .site-list {
     width: 570px;
+
+    &--white {
+      .site-list__item--active {
+        background-color: #ffffff;
+      }
+
+      .site-list__link {
+        color: #ffffff;
+      }
+    }
   }
 
   .site-list__item {
     margin-left: 22px;
 
     &--active::after {
-      background-color: #ffffff;
+      background-color: $colorAccent;
     }
   }
 
   .site-list__link {
     font-size: 20px;
-    color: #ffffff;
   }
 }
