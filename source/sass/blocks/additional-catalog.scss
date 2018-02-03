@@ -131,6 +131,11 @@
     padding-right: 40px;
 
     border: 1px solid #cdcdcd;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 
   .additional-catalog__name {

@@ -84,7 +84,7 @@
     width: 570px;
 
     &--white {
-      .site-list__item--active {
+      .site-list__item--active::after {
         background-color: #ffffff;
       }
 
