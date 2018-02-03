@@ -15,7 +15,7 @@
 }
 
 .page-main__program {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tabletWidth) {
@@ -25,6 +25,10 @@
 
   .page-main__additional-catalog {
     margin-bottom: 75px;
+  }
+
+  .page-main__program {
+    margin-bottom: 70px;
   }
 }
 
@@ -38,6 +42,10 @@
   }
 
   .page-main__additional-catalog {
+    margin-bottom: 85px;
+  }
+
+  .page-main__program {
     margin-bottom: 85px;
   }
 }
