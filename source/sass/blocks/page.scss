@@ -1,0 +1,19 @@
+@media (min-width: $desktopWidth) {
+  .page--background {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: -100;
+      left: 0;
+      right: 0;
+
+      height: 695px;
+
+      background-image: linear-gradient(to right, #ffffff, #ffffff calc(50% + 40px), $colorAccent calc(50% + 40px), $colorAccent);
+      background-repeat: no-repeat;
+    }
+  }
+}
