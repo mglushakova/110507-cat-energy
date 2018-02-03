@@ -313,8 +313,17 @@
       border-bottom: 1px dotted #b8b8b8;
     }
 
+    &:hover::after,
+    &:focus::after {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active::after {
+      display: none;
+    }
+
     &--fat::after {
-      left: 5px;
+      left: 7px;
 
       width: 47px;
     }
@@ -334,6 +343,7 @@
     height: 6px;
 
     background-color: #dcdcdc;
+
     border-radius: 2px;
   }
 
@@ -348,6 +358,7 @@
 
     background-color: #ffffff;
 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     border: 1px solid #cdcdcd;
     border-radius: 50%;
 
@@ -365,6 +376,21 @@
       background-color: $colorAccent;
 
       border-radius: 50%;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $colorAccent;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+
+      &::after {
+        top: 11px;
+        left: 11px;
+      }
     }
   }
 }
