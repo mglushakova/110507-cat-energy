@@ -7,6 +7,11 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
+  background-size: 320px 305px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__container {
@@ -35,6 +40,9 @@
 .promo__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 5px;
+  width: 280px;
+  height: 270px;
 }
 
 .promo__link {
@@ -75,7 +83,10 @@
     position: absolute;
     z-index: -1;
     top: 230px;
-    left: 200px;
+    left: 30px;
+
+    width: 709px;
+    height: 609px;
   }
 
   .promo__link {
@@ -101,7 +112,10 @@
   }
 
   .promo__image {
-    top: 20px;
+    top: 22px;
     left: calc(50% - 160px);
+
+    width: 552px;
+    height: 499px;
   }
 }

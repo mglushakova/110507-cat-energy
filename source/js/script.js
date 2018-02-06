@@ -1,6 +1,9 @@
 var toggleButton = document.querySelector(".main-nav__toggle");
 var menu = document.querySelector(".main-nav");
 
+menu.classList.remove("main-nav--opened");
+menu.classList.add("main-nav--closed");
+
 toggleButton.addEventListener("click", function(event) {
   event.preventDefault();
 
