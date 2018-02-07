@@ -23,7 +23,7 @@
 }
 
 .main-catalog__item {
-  padding-bottom: 22px;
+  padding-bottom: 19px;
 
   border-top: 1px solid #ededed;
 
@@ -36,13 +36,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 3px;
   width: 280px;
 }
 
 .main-catalog__name {
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   width: 80px;
 
   font-family: $fontHeader;
@@ -84,6 +85,10 @@
 
 .main-catalog__image {
   order: -1;
+  display: flex;
+  align-items: flex-end;
+  width: 140px;
+  height: 144px;
 }
 
 .main-catalog__button {
@@ -100,7 +105,7 @@
 
   .main-catalog__title {
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 87px;
     width: 708px;
 
     font-size: 60px;
@@ -115,12 +120,12 @@
   }
 
   .main-catalog__item {
-    margin-bottom: 42px;
+    margin-bottom: 60px;
     margin-right: 60px;
     padding-bottom: 40px;
     width: 324px;
 
-    background-image: linear-gradient(180deg, transparent, transparent 95px, $colorBackground 95px, $colorBackground);
+    background-image: linear-gradient(180deg, transparent, transparent 80px, $colorBackground 80px, $colorBackground);
 
     border: none;
 
@@ -129,7 +134,7 @@
     }
 
     &:last-child {
-      margin-top: 95px;
+      margin-top: 80px;
 
       background: none;
 
@@ -139,6 +144,7 @@
 
   .main-catalog__wrapper {
     flex-direction: column;
+    margin-top: 0;
     width: 100%;
   }
 
@@ -154,7 +160,7 @@
 
   .main-catalog__features {
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     width: 250px;
 
     font-size: 16px;
@@ -163,7 +169,7 @@
 
   .main-catalog__feature {
     padding-top: 7px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
 
     border-bottom: 1px solid #cdcdcd;
   }
@@ -180,11 +186,15 @@
 
   .main-catalog__image {
     margin: 0 auto;
-    margin-bottom: 115px;
+    margin-bottom: 35px;
+    width: 324px;
+    height: 208px;
   }
 
   .main-catalog__button {
     margin: 0 auto;
+    padding-top: 11px;
+    padding-bottom: 11px;
     width: 250px;
 
     font-size: 16px;
@@ -207,7 +217,7 @@
 
   .main-catalog__item {
     margin-right: 80px;
-    margin-bottom: 48px;
+    margin-bottom: 60px;
     width: 245px;
 
     &:nth-child(even) {
@@ -226,6 +236,11 @@
 
   .main-catalog__value {
     width: 70px;
+  }
+
+  .main-catalog__image {
+    width: 245px;
+    height: 208px;
   }
 
   .main-catalog__button {

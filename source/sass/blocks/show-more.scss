@@ -51,7 +51,7 @@
 
 @media (min-width: $tabletWidth) {
   .show-more {
-    padding-top: 165px;
+    padding-top: 160px;
 
     &::after {
       top: 55px;
@@ -72,7 +72,7 @@
 
   .show-more__text {
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 90px;
     width: 175px;
 
     font-size: 16px;
@@ -80,6 +80,8 @@
 
   .show-more__button {
     width: 250px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 
     font-size: 16px;
     line-height: 20px;
