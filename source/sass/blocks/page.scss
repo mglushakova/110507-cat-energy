@@ -6,14 +6,20 @@
       content: "";
 
       position: absolute;
-      z-index: -100;
-      left: 0;
+      z-index: -10;
+      left: calc(50% + 40px);
       right: 0;
 
       height: 695px;
 
-      background-image: linear-gradient(to right, #ffffff, #ffffff calc(50% + 40px), $colorAccent calc(50% + 40px), $colorAccent);
+      background-color: $colorAccent;
       background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 680px 696px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
