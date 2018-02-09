@@ -37,13 +37,18 @@
   }
 }
 
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .social__image {
   &--vk {
     width: 22px;
     height: 12px;
   }
 
-  &--ig {
+  &--insta {
     width: 16px;
     height: 16px;
   }
@@ -51,6 +56,12 @@
   &--fb {
     width: 10px;
     height: 19px;
+  }
+
+  &--vk-tablet,
+  &--insta-tablet,
+  &--fb-tablet {
+    display: none;
   }
 }
 
@@ -66,12 +77,24 @@
   }
 
   .social__image {
+    &--vk-mobile,
+    &--insta-mobile,
+    &--fb-mobile {
+      display: none;
+    }
+
+    &--vk-tablet,
+    &--insta-tablet,
+    &--fb-tablet {
+      display: inline;
+    }
+
     &--vk {
       width: 30px;
       height: 16px;
     }
 
-    &--ig {
+    &--insta {
       width: 23px;
       height: 23px;
     }
