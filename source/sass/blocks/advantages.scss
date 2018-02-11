@@ -80,6 +80,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    counter-reset: item_number;
   }
 
   .advantages__item {
@@ -92,6 +94,8 @@
     font-size: 16px;
     line-height: 24px;
 
+    counter-increment: item_number;
+
     &::before {
       width: 80px;
       height: 80px;
@@ -100,6 +104,8 @@
     }
 
     &::after {
+      content: counter(item_number);
+
       position: absolute;
       top: -40px;
       right: 95px;
@@ -117,22 +123,6 @@
     &:nth-child(3),
     &:nth-child(4) {
       margin-bottom: 0;
-    }
-
-    &--leaf::after {
-      content: "1";
-    }
-
-    &--powder::after {
-      content: "2";
-    }
-
-    &--dining::after {
-      content: "3";
-    }
-
-    &--clock::after {
-      content: "4";
     }
   }
 }

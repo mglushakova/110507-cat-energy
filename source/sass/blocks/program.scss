@@ -93,7 +93,7 @@
       content: "";
 
       position: absolute;
-      left: 50px;
+      left: 0;
       right: 0;
       top: 14px;
       z-index: -1;
@@ -106,14 +106,14 @@
 }
 
 .program__legend {
-  position: relative;
-
   display: inline-block;
   vertical-align: top;
   margin: 0;
   margin-bottom: 33px;
+  margin-left: calc(0px - ((100vw - 280px) / 2));
+  padding-left: calc((100vw - 280px) / 2);
   padding-right: 20px;
-  max-width: 201px;
+  max-width: 221px;
 
   font-family: $fontHeader;
   font-weight: normal;
@@ -485,8 +485,6 @@
     }
 
     &--line::after {
-      left: 0;
-      right: 0;
       top: 22px;
     }
   }
@@ -503,7 +501,8 @@
 
   .program__legend {
     margin-bottom: 75px;
-    padding-left: 40px;
+    margin-left: 0;
+    padding-left: calc((100vw - 708px) / 2);
     padding-right: 40px;
     max-width: 600px;
 
@@ -666,7 +665,7 @@
   }
 
   .program__legend {
-    margin-left: -40px;
+    padding-left: 40px;
     max-width: 1140px;
   }
 

@@ -1,8 +1,7 @@
 .gift {
   position: relative;
 
-  padding-top: 190px;
-  padding-bottom: 50px;
+  padding-top: 185px;
   min-height: 290px;
 
   color: #ffffff;
@@ -38,12 +37,12 @@
   font-family: $fontText;
   font-weight: normal;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 19px;
 }
 
 @media (min-width: $tabletWidth) {
   .gift {
-    padding-top: 75px;
+    padding-top: 72px;
     padding-left: 424px;
     min-height: 200px;
 
@@ -69,7 +68,7 @@
 @media (min-width: $desktopWidth) {
   .gift {
     padding-left: 42px;
-    padding-top: 193px;
+    padding-top: 187px;
     min-height: 286px;
 
     background-image: url("../../img/gift-photo-desktop@1x.jpg");

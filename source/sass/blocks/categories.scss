@@ -116,15 +116,27 @@
     content: "";
 
     position: absolute;
-    top: 7px;
+
+    top: 6px;
     right: -35px;
 
     width: 24px;
-    height: 12px;
+    height: 11px;
 
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    right: -44px;
+
+    width: 33px;
+    height: 11px;
+
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
@@ -194,6 +206,12 @@
     &::after {
       top: 9px;
       right: -50px;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      right: -59px;
     }
   }
 }
