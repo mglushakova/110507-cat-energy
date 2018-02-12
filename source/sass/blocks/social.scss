@@ -14,19 +14,6 @@
   padding: 0;
 
   list-style: none;
-
-  &:hover,
-  &:focus {
-    .social__image {
-      fill: $colorAccent;
-    }
-  }
-
-  &:active {
-    .social__image {
-      opacity: 0.3;
-    }
-  }
 }
 
 .social__item {
@@ -37,20 +24,42 @@
   }
 }
 
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}
+
 .social__image {
-  &--vk {
+  &--vk-mobile {
     width: 22px;
     height: 12px;
   }
 
-  &--ig {
+  &--insta-mobile {
     width: 16px;
     height: 16px;
   }
 
-  &--fb {
+  &--fb-mobile {
     width: 10px;
     height: 19px;
+  }
+
+  &--vk-tablet,
+  &--insta-tablet,
+  &--fb-tablet {
+    display: none;
   }
 }
 
@@ -66,17 +75,29 @@
   }
 
   .social__image {
-    &--vk {
+    &--vk-mobile,
+    &--insta-mobile,
+    &--fb-mobile {
+      display: none;
+    }
+
+    &--vk-tablet,
+    &--insta-tablet,
+    &--fb-tablet {
+      display: inline;
+    }
+
+    &--vk-tablet {
       width: 30px;
       height: 16px;
     }
 
-    &--ig {
+    &--insta-tablet {
       width: 23px;
       height: 23px;
     }
 
-    &--fb {
+    &--fb-tablet {
       width: 14px;
       height: 28px;
     }

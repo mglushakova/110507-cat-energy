@@ -10,16 +10,17 @@
   justify-content: space-between;
   align-items: center;
 
+  color: #444444;
+
   &:hover,
   &:focus {
-    .copyright__image {
-      fill: $colorAccent;
-    }
+    color: $colorAccent;
   }
 
   &:active {
-    .copyright__text,
-    .copyright__image {
+    color: rgba(104, 183, 56, 0.3);
+
+    .copyright__text {
       opacity: 0.3;
     }
   }
