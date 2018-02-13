@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Функциональное питание для котов Cat Energy</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="picturefill.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body class="page page--background">
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -155,10 +159,10 @@
               <li class="social__item">
                 <a class="social__link social__link--vk" href="#">
                   <svg class="social__image--vk-mobile">
-                    <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+                    <use xlink:href="#sp-icon-vk-mobile"></use>
                   </svg>
                   <svg class="social__image--vk-tablet">
-                    <use xlink:href="img/sprite.svg#icon-vk-tablet"></use>
+                    <use xlink:href="#sp-icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Вконтакте</span>
                 </a>
@@ -166,10 +170,10 @@
               <li class="social__item">
                 <a class="social__link social__link--insta" href="#">
                   <svg class="social__image--insta-mobile">
-                    <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+                    <use xlink:href="#sp-icon-insta-mobile"></use>
                   </svg>
                   <svg class="social__image--insta-tablet">
-                    <use xlink:href="img/sprite.svg#icon-insta-tablet"></use>
+                    <use xlink:href="#sp-icon-insta"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Инстаграме</span>
                 </a>
@@ -177,10 +181,10 @@
               <li class="social__item">
                 <a class="social__link social__link--fb" href="#">
                   <svg class="social__image--fb-mobile">
-                    <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+                    <use xlink:href="#sp-icon-fb-mobile"></use>
                   </svg>
                   <svg class="social__image--fb-tablet">
-                    <use xlink:href="img/sprite.svg#icon-fb-tablet"></use>
+                    <use xlink:href="#sp-icon-fb"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                 </a>
@@ -191,7 +195,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">HTML Academy</span>
               <svg class="copyright__image">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                <use xlink:href="#sp-htmlacademy"></use>
               </svg>
             </a>
           </div>

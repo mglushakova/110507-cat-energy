@@ -110,7 +110,7 @@
   vertical-align: top;
   margin: 0;
   margin-bottom: 33px;
-  margin-left: calc(0px - ((100vw - 280px) / 2));
+  margin-left: calc(1px - ((100vw - 280px) / 2));
   padding-left: calc((100vw - 280px) / 2);
   padding-right: 20px;
   max-width: 221px;
@@ -346,10 +346,10 @@
   }
 
   &:focus {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 17px;
+    padding-right: 17px;
 
     border: 2px solid #444444;
   }
@@ -502,7 +502,7 @@
   .program__legend {
     margin-bottom: 75px;
     margin-left: 0;
-    padding-left: calc((100vw - 708px) / 2);
+    padding-left: 40px;
     padding-right: 40px;
     max-width: 600px;
 
@@ -665,6 +665,7 @@
   }
 
   .program__legend {
+    margin-left: -40px;
     padding-left: 40px;
     max-width: 1140px;
   }

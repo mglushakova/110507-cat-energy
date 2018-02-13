@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Подбор программы функционального питания для котов Cat Energy</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="picturefill.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body class="inner-page page">
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -87,14 +91,14 @@
                 <label class="program__label program__label--input" for="email">E-mail:<sup>*</sup></label>
                 <input class="program__input program__input--email" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com" required>
                 <svg class="program__icon program__icon--mail" width="17" height="13">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  <use xlink:href="#sp-icon-mail"></use>
                 </svg>
               </li>
               <li class="program__item program__item--phone">
                 <label class="program__label program__label--input" for="phone">Телефон:<sup>*</sup></label>
                 <input class="program__input program__input--phone" id="phone" type="tel" name="phone" value="" placeholder="8 (960) 900-60-90" required>
                 <svg class="program__icon program__icon--phone" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  <use xlink:href="#sp-icon-phone"></use>
                 </svg>
               </li>
             </ul>
@@ -159,10 +163,10 @@
               <li class="social__item">
                 <a class="social__link social__link--vk" href="#">
                   <svg class="social__image--vk-mobile">
-                    <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+                    <use xlink:href="#sp-icon-vk-mobile"></use>
                   </svg>
                   <svg class="social__image--vk-tablet">
-                    <use xlink:href="img/sprite.svg#icon-vk-tablet"></use>
+                    <use xlink:href="#sp-icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Вконтакте</span>
                 </a>
@@ -170,10 +174,10 @@
               <li class="social__item">
                 <a class="social__link social__link--insta" href="#">
                   <svg class="social__image--insta-mobile">
-                    <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+                    <use xlink:href="#sp-icon-insta-mobile"></use>
                   </svg>
                   <svg class="social__image--insta-tablet">
-                    <use xlink:href="img/sprite.svg#icon-insta-tablet"></use>
+                    <use xlink:href="#sp-icon-insta"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Инстаграме</span>
                 </a>
@@ -181,10 +185,10 @@
               <li class="social__item">
                 <a class="social__link social__link--fb" href="#">
                   <svg class="social__image--fb-mobile">
-                    <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+                    <use xlink:href="#sp-icon-fb-mobile"></use>
                   </svg>
                   <svg class="social__image--fb-tablet">
-                    <use xlink:href="img/sprite.svg#icon-fb-tablet"></use>
+                    <use xlink:href="#sp-icon-fb"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                 </a>
@@ -195,7 +199,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">HTML Academy</span>
               <svg class="copyright__image">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                <use xlink:href="#sp-htmlacademy"></use>
               </svg>
             </a>
           </div>
