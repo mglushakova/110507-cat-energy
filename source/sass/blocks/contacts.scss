@@ -46,6 +46,10 @@
   background-position: center -38px;
   background-size: cover;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
+
   &::before {
     content: "";
 
