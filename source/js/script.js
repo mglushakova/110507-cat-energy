@@ -21,22 +21,24 @@ var exampleImageAfter = document.querySelector(".example__image--slim");
 var exampleButtonBefore = document.querySelector(".example__button--fat");
 var exampleButtonAfter = document.querySelector(".example__button--slim");
 
-if ( exampleButtonBefore && exampleButtonAfter ) {
-  exampleButtonBefore.addEventListener("click", function() {
-    exampleImageBefore.classList.add("example__image--active");
-    exampleImageAfter.classList.remove("example__image--active");
+if(window.matchMedia('(max-width: 768px)').matches) {
+  if ( exampleButtonBefore && exampleButtonAfter ) {
+    exampleButtonBefore.addEventListener("click", function() {
+      exampleImageBefore.classList.add("example__image--active");
+      exampleImageAfter.classList.remove("example__image--active");
 
-    exampleButtonBefore.classList.add("example__button--active");
-    exampleButtonAfter.classList.remove("example__button--active");
-  });
+      exampleButtonBefore.classList.add("example__button--active");
+      exampleButtonAfter.classList.remove("example__button--active");
+    });
 
-  exampleButtonAfter.addEventListener("click", function() {
-    exampleImageAfter.classList.add("example__image--active");
-    exampleImageBefore.classList.remove("example__image--active");
+    exampleButtonAfter.addEventListener("click", function() {
+      exampleImageAfter.classList.add("example__image--active");
+      exampleImageBefore.classList.remove("example__image--active");
 
-    exampleButtonAfter.classList.add("example__button--active");
-    exampleButtonBefore.classList.remove("example__button--active");
-  });
+      exampleButtonAfter.classList.add("example__button--active");
+      exampleButtonBefore.classList.remove("example__button--active");
+    });
+  }
 }
 
 ymaps.ready(function () {
