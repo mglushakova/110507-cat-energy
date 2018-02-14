@@ -41,35 +41,51 @@ if(window.matchMedia('(max-width: 768px)').matches) {
   }
 }
 
-ymaps.ready(function () {
-  var myMap = new ymaps.Map("map", {
-      center: [59.938631, 30.323055],
-      zoom: 16
-    }, {
-      searchControlProvider: "yandex#search"
-    }),
+function initMap() {
+  var centerMobile = {lat: 59.938821, lng: 30.323040};
+  var centerDesktop = {lat: 59.93917, lng: 30.31964};
+  var imageMobile = {
+    url: "../img/map-pin.png",
+    scaledSize: new google.maps.Size(59, 53)
+  };
+  var imageTablet = {
+    url: "../img/map-pin.png",
+    scaledSize: new google.maps.Size(123, 106)
+  };
+  var markerPosition = {lat: 59.938821, lng: 30.323040};
 
-    // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
-
-    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: "Собственный значок метки",
-      balloonContent: "Это красивая метка"
-    }, {
-      // Опции.
-      // Необходимо указать данный тип макета.
-      iconLayout: "default#image",
-      // Своё изображение иконки метки.
-      iconImageHref: "../img/map-pin.png",
-      // Размеры метки.
-      iconImageSize: [59, 53],
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
-      iconImageOffset: [-20, -60]
+  if(window.matchMedia('(max-width: 767px)').matches) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: centerMobile
     });
 
-  myMap.geoObjects
-    .add(myPlacemark);
-});
+    var marker = new google.maps.Marker({
+      position: markerPosition,
+      map: map,
+      icon: imageMobile
+    });
+  } else if(window.matchMedia('(max-width: 1299px)').matches) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: centerMobile
+    });
+
+    var marker = new google.maps.Marker({
+      position: markerPosition,
+      map: map,
+      icon: imageTablet
+    });
+  } else {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: centerDesktop
+    });
+
+    var marker = new google.maps.Marker({
+      position: markerPosition,
+      map: map,
+      icon: imageTablet
+    });
+  }
+}
