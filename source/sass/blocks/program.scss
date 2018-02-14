@@ -303,6 +303,10 @@
   &:checked ~ .program__label::after {
     display: block;
   }
+
+  &:disabled ~ .program__label {
+    opacity: 0.3;
+  }
 }
 
 .program__textarea {
@@ -344,6 +348,10 @@
 
   &:checked ~ .program__label::after {
     display: block;
+  }
+
+  &:disabled ~ .program__label {
+    opacity: 0.3;
   }
 }
 
