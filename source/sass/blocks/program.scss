@@ -232,6 +232,7 @@
   padding-bottom: 12px;
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 170px;
   height: 45px;
 
   font-family: $fontHeader;
@@ -282,11 +283,15 @@
   left: 247px;
 
   &--mail {
+    top: 16px;
+
     width: 17px;
     height: 13px;
   }
 
   &--phone {
+    top: 13px;
+
     width: 20px;
     height: 20px;
   }
@@ -558,6 +563,16 @@
     &::placeholder {
       font-size: 20px;
       line-height: 20px;
+    }
+  }
+
+  .program__icon {
+    &--mail {
+      top: 20px;
+    }
+
+    &--phone {
+      top: 17px;
     }
   }
 
