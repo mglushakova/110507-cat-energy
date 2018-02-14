@@ -401,23 +401,21 @@
     line-height: 30px;
   }
 
-  .program__wrapper {
-    margin: 0 auto;
-    width: 708px;
-  }
-
   .program__fieldset {
     margin-bottom: 68px;
 
     &--cat-info {
+      margin: 0 auto;
+      margin-bottom: 72px;
       padding-bottom: 0;
+      width: 708px;
     }
 
     &--goal {
       position: relative;
       right: 0;
 
-      margin-left: 40px;
+      margin-left: calc(((100vw - 708px) / 2) + 40px);
       margin-bottom: 80px;
       padding-top: 33px;
       padding-bottom: 0;
