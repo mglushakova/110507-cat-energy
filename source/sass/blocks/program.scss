@@ -53,30 +53,15 @@
     }
   }
 
-  &--contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-    width: 280px;
-  }
-
   &--comment {
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-
     .program__legend {
       margin-bottom: 35px;
     }
   }
 
   &--additions {
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-
-    .program__list {
-      margin-top: 10px;
+    .program__legend {
+      margin-bottom: 42px;
     }
 
     .program__item {
@@ -85,35 +70,17 @@
   }
 
   &--line {
-    position: relative;
-
     padding-top: 0;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 14px;
-      z-index: -1;
-
-      height: 3px;
-
-      background-color: $colorAccent;
-    }
   }
 }
 
 .program__legend {
-  display: inline-block;
-  vertical-align: top;
+  position: relative;
+
+  display: flex;
   margin: 0;
   margin-bottom: 33px;
-  margin-left: calc(1px - ((100vw - 280px) / 2));
-  padding-left: calc((100vw - 280px) / 2);
-  padding-right: 20px;
-  max-width: 221px;
+  margin-left: calc((100vw - 280px) / 2);
 
   font-family: $fontHeader;
   font-weight: normal;
@@ -121,7 +88,19 @@
   line-height: 24px;
   color: $colorTextDark;
 
-  background-color: #ffffff;
+  &::after {
+    content: "";
+
+    position: relative;
+    top: 15px;
+
+    flex-grow: 1;
+    margin-left: 22px;
+    min-width: calc(((100vw - 280px) / 2) + 75px);
+    height: 3px;
+
+    background-color: $colorAccent;
+  }
 }
 
 .program__list {
@@ -466,7 +445,7 @@
       margin-bottom: 17px;
 
       .program__legend {
-        margin-bottom: 55px;
+        margin-bottom: 65px;
       }
 
       .program__list {
@@ -501,13 +480,30 @@
 
   .program__legend {
     margin-bottom: 75px;
-    margin-left: 0;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 600px;
+    margin-left: calc(((100vw - 708px) / 2) + 36px);
 
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 23px;
+      left: calc(1px - (((100vw - 708px) / 2) + 36px));
+
+      width: calc(((100vw - 708px) / 2));
+      height: 3px;
+
+      background-color: $colorAccent;
+    }
+
+    &::after {
+      top: 23px;
+
+      margin-left: 37px;
+      min-width: 0;
+    }
   }
 
   .program__label {
@@ -665,9 +661,16 @@
   }
 
   .program__legend {
-    margin-left: -40px;
-    padding-left: 40px;
-    max-width: 1140px;
+    margin-left: calc(((100vw - 1220px) / 2));
+    padding-left: 0;
+
+    &::before {
+      top: 23px;
+    }
+
+    &::after {
+      top: 23px;
+    }
   }
 
   .program__list {
