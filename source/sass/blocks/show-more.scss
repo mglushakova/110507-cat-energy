@@ -1,27 +1,13 @@
 .show-more {
-  position: relative;
-
   padding-top: 80px;
   padding-bottom: 25px;
 
   text-align: center;
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 28px;
-    left: 145px;
-
-    width: 30px;
-    height: 30px;
-
-    opacity: 0.2;
-
-    background-image: url("../../img/icon-plus-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 28px;
+  background-size: 30px 30px;
 }
 
 .show-more__title {
@@ -53,15 +39,9 @@
   .show-more {
     padding-top: 160px;
 
-    &::after {
-      top: 55px;
-      left: 132px;
-
-      width: 60px;
-      height: 60px;
-
-      background-image: url("../../img/icon-plus.svg");
-    }
+    background-image: url("../img/icon-plus.svg");
+    background-position: center 53px;
+    background-size: 60px 60px;
   }
 
   .show-more__title {
@@ -93,11 +73,6 @@
 @media (min-width: $desktopWidth) {
   .show-more {
     padding-top: 162px;
-
-    &::after {
-      top: 52px;
-      left: 92px;
-    }
   }
 
   .show-more__button {

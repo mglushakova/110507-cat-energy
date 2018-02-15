@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Функциональное питание для котов Cat Energy</title>
-    <link href="css/style.css" rel="stylesheet">
-    <script src="picturefill.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1LKkoy-NDTDrnTcTCZm_lwtXtHAz9hww&callback=initMap">
+    </script>
   </head>
   <body class="page page--background">
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -53,7 +58,7 @@
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg" srcset="img/index-can-tablet@2x.jpg 2x">
             <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Упаковка Cat Energy Pro с курицей">
           </picture>
-          <a class="promo__link button" href="#">Подобрать программу</a>
+          <a class="promo__link button" href="program.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -63,12 +68,12 @@
           <li class="categories__item">
             <h3 class="categories__title">Похудение</h3>
             <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories__link" href="#">Каталог Slim</a></li>
+            <a class="categories__link" href="catalog.html">Каталог Slim</a></li>
           <li class="categories__item">
             <h3 class="categories__title">Набор массы</h3>
             <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br>мышцы!</p>
-            <a class="categories__link" href="#">Каталог Pro</a></li>
+            <a class="categories__link" href="catalog.html">Каталог Pro</a></li>
         </ul>
       </section>
 
@@ -154,33 +159,33 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vk" href="#">
-                  <svg class="social__image--vk-mobile">
-                    <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+                  <svg class="social__image--vk-mobile" width="22" height="12">
+                    <use xlink:href="#sp-icon-vk-mobile"></use>
                   </svg>
-                  <svg class="social__image--vk-tablet">
-                    <use xlink:href="img/sprite.svg#icon-vk-tablet"></use>
+                  <svg class="social__image--vk-tablet" width="30" height="16">
+                    <use xlink:href="#sp-icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--insta" href="#">
-                  <svg class="social__image--insta-mobile">
-                    <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+                  <svg class="social__image--insta-mobile" width="16" height="16">
+                    <use xlink:href="#sp-icon-insta-mobile"></use>
                   </svg>
-                  <svg class="social__image--insta-tablet">
-                    <use xlink:href="img/sprite.svg#icon-insta-tablet"></use>
+                  <svg class="social__image--insta-tablet" width="23" height="23">
+                    <use xlink:href="#sp-icon-insta"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Инстаграме</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--fb" href="#">
-                  <svg class="social__image--fb-mobile">
-                    <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+                  <svg class="social__image--fb-mobile" width="10" height="19">
+                    <use xlink:href="#sp-icon-fb-mobile"></use>
                   </svg>
-                  <svg class="social__image--fb-tablet">
-                    <use xlink:href="img/sprite.svg#icon-fb-tablet"></use>
+                  <svg class="social__image--fb-tablet" width="14" height="28">
+                    <use xlink:href="#sp-icon-fb"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                 </a>
@@ -190,8 +195,8 @@
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">HTML Academy</span>
-              <svg class="copyright__image">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <svg class="copyright__image" width="27" height="34">
+                <use xlink:href="#sp-htmlacademy"></use>
               </svg>
             </a>
           </div>
