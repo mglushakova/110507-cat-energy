@@ -13,6 +13,8 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 var run = require("run-sequence");
 var del = require("del");
 
@@ -60,7 +62,18 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(gulp.dest("build"))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("scripts", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
@@ -85,6 +98,7 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
+    "scripts",
     done)
   ;
 });
