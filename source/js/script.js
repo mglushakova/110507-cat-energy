@@ -45,11 +45,11 @@ function initMap() {
   var centerMobile = {lat: 59.938821, lng: 30.323040};
   var centerDesktop = {lat: 59.93917, lng: 30.31964};
   var imageMobile = {
-    url: "../img/map-pin.png",
+    url: "img/map-pin.png",
     scaledSize: new google.maps.Size(59, 53)
   };
   var imageTablet = {
-    url: "../img/map-pin.png",
+    url: "img/map-pin.png",
     scaledSize: new google.maps.Size(123, 106)
   };
   var markerPosition = {lat: 59.938821, lng: 30.323040};
