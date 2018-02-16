@@ -630,6 +630,7 @@
 
   .program__wrapper {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 68px;
     width: 1220px;
@@ -638,12 +639,13 @@
   .program__fieldset {
     &--cat-info {
       margin-bottom: 0;
+      width: 570px;
     }
 
     &--goal {
       margin-left: 80px;
       margin-bottom: 0;
-      width: 572px;
+      width: 570px;
 
       border-right: 1px solid #e6e6e6;
     }
