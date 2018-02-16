@@ -143,7 +143,7 @@
     position: relative;
 
     &--fat {
-      margin-right: 100px;
+      margin-right: 105px;
 
       &::after {
         content: "";
@@ -287,6 +287,11 @@
     text-align: right;
   }
 
+  .example__price {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
   .example__slider {
     padding-bottom: 50px;
     min-height: 650px;
@@ -297,7 +302,9 @@
   .example__slide {
     position: relative;
 
+    margin: 0 auto;
     padding-top: 557px;
+    width: 768px;
     min-height: 600px;
   }
 
@@ -486,6 +493,11 @@
     text-align: left;
   }
 
+  .example__price {
+    display: inline;
+    margin-top: 0;
+  }
+
   .example__slider {
     position: relative;
 
@@ -508,6 +520,7 @@
   }
 
   .example__slide {
+    margin: auto;
     padding-top: 557px;
     width: 100%;
   }

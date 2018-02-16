@@ -66,7 +66,7 @@
     }
 
     .program__item {
-      margin-bottom: 23px;
+      margin-bottom: 24px;
     }
   }
 
@@ -407,7 +407,7 @@
   }
 
   .program__fieldset {
-    margin-bottom: 68px;
+    margin-bottom: 66px;
 
     &--cat-info {
       margin: 0 auto;
@@ -421,7 +421,7 @@
       right: 0;
 
       margin-left: calc(((100vw - 708px) / 2) + 40px);
-      margin-bottom: 80px;
+      margin-bottom: 77px;
       padding-top: 33px;
       padding-bottom: 0;
       width: 100%;
@@ -450,10 +450,10 @@
     }
 
     &--additions {
-      margin-bottom: 17px;
+      margin-bottom: 13px;
 
       .program__legend {
-        margin-bottom: 65px;
+        margin-bottom: 68px;
       }
 
       .program__list {
@@ -466,7 +466,7 @@
       }
 
       .program__item {
-        margin-bottom: 50px;
+        margin-bottom: 52px;
         width: 286px;
       }
     }
@@ -669,7 +669,7 @@
     }
 
     &--additions {
-      margin-bottom: 25px;
+      margin-bottom: 18px;
 
       .program__list {
         width: 100%;
@@ -718,6 +718,7 @@
   .program__textarea {
     margin-left: 0;
     width: 1220px;
+    min-height: 175px;
   }
 
   .program__button {
