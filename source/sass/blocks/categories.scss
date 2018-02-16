@@ -233,7 +233,6 @@
     padding-top: 80px;
     padding-bottom: 60px;
     padding-left: 50px;
-    padding-right: 70px;
     width: 570px;
 
     &::before {
@@ -252,16 +251,22 @@
       height: 97px;
     }
 
-    &:nth-child(2)::after {
-      top: 70px;
-      left: 35px;
+    &:nth-child(2) {
+      .categories__description {
+        width: 465px;
+      }
 
-      width: 134px;
-      height: 56px;
-    }
+      &::after {
+        top: 70px;
+        left: 35px;
 
-    &:nth-child(2) br {
-      display: none;
+        width: 134px;
+        height: 56px;
+      }
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -272,5 +277,6 @@
 
   .categories__description {
     margin-bottom: 35px;
+    width: 465px;
   }
 }
