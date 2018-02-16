@@ -14,7 +14,7 @@
   margin-bottom: 22px;
 
   font-family: $fontHeader;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $colorTextDark;
@@ -31,6 +31,7 @@
   width: 279px;
 
   font-family: $fontText;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $colorTextLight;
@@ -65,6 +66,7 @@
 
 .example__value {
   font-family: $fontHeader;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -80,6 +82,7 @@
   padding-right: 15px;
 
   font-family: $fontText;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: $colorTextLight;
@@ -91,6 +94,7 @@
   display: block;
 
   font-family: $fontHeader;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -119,6 +123,7 @@
 
 .example__button {
   font-family: $fontHeader;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
