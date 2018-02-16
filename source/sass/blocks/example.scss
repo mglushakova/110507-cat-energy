@@ -14,6 +14,7 @@
   margin-bottom: 22px;
 
   font-family: $fontHeader;
+  font-weight: normal;
   font-size: 36px;
   line-height: 60px;
   color: $colorTextDark;
@@ -218,7 +219,7 @@
 
   .example__description {
     margin-bottom: 55px;
-    width: 100%;
+    width: 680px;
 
     font-size: 16px;
     line-height: 24px;
@@ -277,22 +278,52 @@
     width: 192px;
 
     font-size: 20px;
-    line-height: 27px;
+    line-height: 20px;
     text-align: right;
   }
 
   .example__slider {
-    padding-bottom: 65px;
+    padding-bottom: 50px;
     min-height: 650px;
 
     background-image: linear-gradient(180deg, transparent, transparent 190px, $colorBackground 190px, $colorBackground);
   }
 
+  .example__slide {
+    position: relative;
+
+    padding-top: 557px;
+    min-height: 600px;
+  }
+
   .example__image {
     margin-bottom: 10px;
     min-height: 545px;
+
     width: 690px;
     height: 517px;
+
+    transform: scale(0.96);
+
+    &--fat {
+      position: absolute;
+      top: 10px;
+      left: 41px;
+      z-index: 3;
+
+      clip: rect(auto 343px auto auto);
+    }
+
+    &--slim {
+      position: absolute;
+      top: 6px;
+      left: 50px;
+      z-index: 2;
+
+      clip: rect(auto auto auto 332px);
+
+      display: inline-block;
+    }
   }
 
   .example__control {

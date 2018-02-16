@@ -77,6 +77,7 @@
   margin-bottom: 28px;
 
   font-family: $fontHeader;
+  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -87,6 +88,7 @@
   margin-bottom: 43px;
 
   font-family: "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
 
@@ -107,6 +109,7 @@
   position: relative;
 
   font-family: $fontHeader;
+  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -149,7 +152,7 @@
     padding-top: 75px;
     padding-bottom: 60px;
     padding-left: 50px;
-    padding-right: 285px;
+    padding-right: 0;
     margin-bottom: 30px;
 
     &::before {
@@ -168,16 +171,18 @@
       height: 195px;
     }
 
-    &:nth-child(2)::after {
-      top: 135px;
-      left: 410px;
+    &:nth-child(2) {
+      &::after {
+        top: 135px;
+        left: 410px;
 
-      width: 268px;
-      height: 112px;
-    }
+        width: 268px;
+        height: 112px;
+      }
 
-    &:nth-child(2) br {
-      display: inline;
+      .categories__description {
+        width: 340px;
+      }
     }
   }
 
@@ -190,6 +195,7 @@
 
   .categories__description {
     margin-bottom: 55px;
+    width: 375px;
 
     font-size: 16px;
     line-height: 24px;

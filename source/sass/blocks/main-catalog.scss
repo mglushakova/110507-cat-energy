@@ -10,6 +10,7 @@
   width: 280px;
 
   font-family: $fontHeader;
+  font-weight: normal;
   font-size: 36px;
   line-height: 60px;
   color: $colorTextDark;
@@ -49,6 +50,7 @@
   width: 80px;
 
   font-family: $fontHeader;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -66,6 +68,7 @@
   list-style: none;
 
   font-family: $fontText;
+  font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   color: $colorTextLight;
@@ -96,6 +99,9 @@
 .main-catalog__button {
   display: block;
   width: 280px;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $tabletWidth) {
