@@ -243,10 +243,10 @@
     padding-right: 14px;
 
     border: 2px solid #444444;
+  }
 
-    & ~ .program__icon {
-      fill: $colorAccent;
-    }
+  &:focus ~ .program__icon {
+    fill: $colorAccent;
   }
 
   &--email,
@@ -256,10 +256,10 @@
 
   &--error {
     border: 2px solid #ff8282;
+  }
 
-    & ~ .program__icon {
-      fill: #ff8282;
-    }
+  &--error ~ .program__icon {
+    fill: #ff8282;
   }
 }
 

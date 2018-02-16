@@ -62,9 +62,10 @@
   .promo__container {
     position: relative;
 
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-top: 0;
     padding-left: 89px;
-    min-height: 820px;
+    min-height: 790px;
   }
 
   .promo__title {
@@ -84,7 +85,7 @@
   .promo__image {
     position: absolute;
     z-index: -1;
-    top: 230px;
+    top: 201px;
     left: 0;
 
     width: 709px;
@@ -103,18 +104,23 @@
 
 @media (min-width: $desktopWidth) {
   .promo__container {
+    margin-top: 105px;
     margin-bottom: 100px;
-    padding-top: 105px;
     padding-left: 80px;
-    min-height: 555px;
+    min-height: 450px;
+  }
+
+  .promo__title {
+    width: 500px;
   }
 
   .promo__slogan {
     margin-bottom: 50px;
+    width: 500px;
   }
 
   .promo__image {
-    top: 22px;
+    top: -85px;
     left: calc(50% - 160px);
 
     width: 552px;
